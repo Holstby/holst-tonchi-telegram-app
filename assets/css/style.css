@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: #f2f2f7;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.wallet {
+    background: #F2F2F7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.balance {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.icon-button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icon-button img {
+    width: 100%;
+    height: auto;
+    max-width: 50px; /* Adjust the size as needed */
+}
+
+.icon-button:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+    .actions {
+        position: relative;
+        bottom: 10%;
+    }
+
+    .icon-button img {
+        max-width: 70px; /* Adjust the size for larger screens */
+    }
+}
+

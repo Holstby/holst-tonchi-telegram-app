@@ -1,0 +1,27 @@
+{
+  "name": "holst-tonchi-telegram-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "bot": "cross-env NODE_ENV=production node bot.js",
+    "start:dev": "cross-env NODE_ENV=development node server.js",
+    "bot:dev": "cross-env NODE_ENV=development node bot.js",
+    "start:test": "cross-env NODE_ENV=testing node server.js",
+    "bot:test": "cross-env NODE_ENV=testing node bot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2",
+    "node-telegram-bot-api": "^0.66.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
